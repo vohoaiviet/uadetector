@@ -155,7 +155,13 @@ public enum OperatingSystemFamily {
 	 * OS X, formerly Mac OS X, is a Unix-based operating systems developed by Apple. It is a proprietary distribution
 	 * of the free Darwin operating system from Apple.
 	 */
-	OS_X("OS X", Pattern.compile("(Mac OS X|OS X)")),
+	OS_X("OS X", Pattern.compile("OS X")),
+
+	/**
+	 * MacOs, previously OS X, formerly Mac OS X, is a Unix-based operating systems developed by Apple. It is a proprietary distribution
+	 * of the free Darwin operating system from Apple. Since 10.12 called MacOs again. Not to confuse with old < 10 Mac OS.
+	 */
+	MACOS("macOS", Pattern.compile("Mac OS X")),
 
 	/**
 	 * MorphOS is an Amiga-compatible computer operating system. It is a mixed proprietary and open source OS produced
